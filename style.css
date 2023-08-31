@@ -29,6 +29,10 @@ header .container{
   width: 80px;
 }
 
+.central{
+  overflow: auto;
+}
+
 .main-menu{
   background-color: #1B72E8;
   height: 150px;
