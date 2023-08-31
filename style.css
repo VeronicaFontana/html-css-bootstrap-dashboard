@@ -1,5 +1,6 @@
 body{
   font-family: 'Roboto', sans-serif;
+  overflow: hidden;
 }
 
 [class^="container"], .card-box{
@@ -29,14 +30,14 @@ header .container{
   width: 80px;
 }
 
-.central{
+body main .central{
   overflow: auto;
+  width: calc(100vw - 80px);
 }
 
 .main-menu{
   background-color: #1B72E8;
-  height: 150px;
-  width: calc(100vw - 80px);
+  height: 250px;
 }
 
 
@@ -50,7 +51,7 @@ header .container{
     width: 150px;
   }
 
-  .main-menu{
+  .central{
     width: calc(100vw - 150px);
   }
 }
