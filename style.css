@@ -1,3 +1,52 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
+
+[class^="container"], .card-box{
+  border: 1px solid black;
+}
+
+[class^="col"]{
+  border: 1px solid red;
+}
+
+header, .central{
+  background-color: #F8F9FA;
+}
+
+header{
+  height: 80px;
+}
+
+header .container{
+  background-color: white;
+}
+
+.sidebar{
+  background-image: url(img/img/sidebar-bg.png);
+  background-color: #051E34;
+  height: calc(100vh - 80px);
+  width: 80px;
+}
+
+.main-menu{
+  background-color: #1B72E8;
+  height: 150px;
+  width: calc(100vw - 80px);
+}
+
+
+
+
+
+
+/* RESPONSIVE */
+@media screen and (min-width: 1200px){
+  .sidebar{
+    width: 150px;
+  }
+
+  .main-menu{
+    width: calc(100vw - 150px);
+  }
+}
