@@ -32,6 +32,10 @@ header .logo-phone{
   height: 30px;
 }
 
+.central .offcanvas{
+  width: 100%;
+}
+
 .offcanvas form, .offcanvas form input{
   background-color: white;
 }
@@ -74,13 +78,29 @@ body main .central{
 }
 
 .blue-border{
+  cursor: pointer;
   background-color: #165BBA;
   border-radius: 15px;
   padding: 5px 10px;
 }
 
+.blue-border:hover{
+  cursor: pointer;
+  background-color: #051E34;
+}
+
 .card-header{
   font-weight: bold;
+}
+
+table button{
+  padding: 3px 8px;
+  color: rgb(134, 131, 131);
+  border-radius: 5px;
+}
+
+table button:hover{
+  background-color: white;
 }
 
 table tr td:nth-child(2), table tr td:nth-child(3){
@@ -89,6 +109,11 @@ table tr td:nth-child(2), table tr td:nth-child(3){
 
 table th:first-child, tr td:first-child{
   width: 50%;
+}
+
+table tr td img{
+  width: 25px;
+  margin-right: 10px;
 }
 
 .done{
@@ -120,6 +145,10 @@ table th:first-child, tr td:first-child{
 
   .central{
     width: calc(100vw - 150px);
+  }
+
+  .central .offcanvas{
+    width: 50%;
   }
 }
 
