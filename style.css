@@ -3,8 +3,16 @@ body{
   overflow: hidden;
 }
 
+.fa-solid{
+  cursor: pointer;
+}
+
 header, .central{
   background-color: #F8F9FA;
+}
+
+header{
+  height: 80px;
 }
 
 header [class^="container"]{
@@ -29,6 +37,11 @@ header .logo-phone{
   background-color: #051E34;
   height: calc(100vh - 80px);
   width: 80px;
+}
+
+.sidebar ul li:hover{
+  cursor: pointer;
+  background-color: gray;
 }
 
 body main .central{
