@@ -3,13 +3,8 @@ body{
   overflow: hidden;
 }
 
-
 header, .central{
   background-color: #F8F9FA;
-}
-
-header{
-  height: 80px;
 }
 
 header [class^="container"]{
@@ -28,7 +23,6 @@ header .logo-phone{
   width: 30px;
   height: 30px;
 }
-
 
 .sidebar{
   background-image: url(img/img/sidebar-bg.png);
@@ -63,8 +57,34 @@ body main .central{
   padding: 5px 10px;
 }
 
+.card-header{
+  font-weight: bold;
+}
+
 table tr td:nth-child(2), table tr td:nth-child(3){
   display: none;
+}
+
+table th:first-child, tr td:first-child{
+  width: 50%;
+}
+
+.done{
+  background-color: #198754;
+}
+
+.failed{
+  background-color: #DC3646;
+}
+
+.process{
+  background-color: #FFC107;
+}
+
+.done, .failed, .process{
+  padding: 3px 5px;
+  border-radius: 10px;
+  color: white;
 }
 
 
