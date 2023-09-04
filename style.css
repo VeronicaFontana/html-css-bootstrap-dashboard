@@ -67,6 +67,10 @@ body main .central{
   padding: 5px 10px;
 }
 
+table tr td:nth-child(2), table tr td:nth-child(3){
+  display: none;
+}
+
 
 
 
@@ -78,5 +82,11 @@ body main .central{
 
   .central{
     width: calc(100vw - 150px);
+  }
+}
+
+@media screen and (min-width: 768px){
+  table tr td:nth-child(2), table tr td:nth-child(3){
+    display: table-cell;
   }
 }
