@@ -7,6 +7,7 @@ body{
   cursor: pointer;
 }
 
+/* HEADER */
 header, .central{
   background-color: #F8F9FA;
 }
@@ -32,14 +33,13 @@ header .logo-phone{
   height: 30px;
 }
 
-.central .offcanvas{
-  width: 100%;
+/* MAIN */
+body main .central{
+  overflow: auto;
+  width: calc(100vw - 80px);
 }
 
-.offcanvas form, .offcanvas form input{
-  background-color: white;
-}
-
+/* SIDEBAR */
 .sidebar{
   background-image: url(img/img/sidebar-bg.png);
   background-color: #051E34;
@@ -52,11 +52,7 @@ header .logo-phone{
   background-color: gray;
 }
 
-body main .central{
-  overflow: auto;
-  width: calc(100vw - 80px);
-}
-
+/* SEZIONE BLU */
 .main-menu{
   background-color: #1B72E8;
 }
@@ -71,6 +67,14 @@ body main .central{
 .fa-plus:hover{
   background-color: white;
   color: #1B72E8;
+}
+
+.central .offcanvas{
+  width: 100%;
+}
+
+.offcanvas form, .offcanvas form input{
+  background-color: white;
 }
 
 .course-name, .student-number{
@@ -89,10 +93,12 @@ body main .central{
   background-color: #051E34;
 }
 
+/* SEZIONE CARD */
 .card-header{
   font-weight: bold;
 }
 
+/* TABELLA */
 table button{
   padding: 3px 8px;
   color: rgb(134, 131, 131);
@@ -133,7 +139,6 @@ table tr td img{
   border-radius: 10px;
   color: white;
 }
-
 
 
 

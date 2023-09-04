@@ -17,25 +17,34 @@
   <title>Dashboard</title>
 </head>
 <body>
+  <!-- HEADER -->
   <header class="vw-100 py-3 ">
     <div class="container-fluid px-3">
       <div class="row align-items-center">
+        
+        <!-- LOGO -->
         <div class="col-auto p-1">
           <div>
             <img class="logo-phone d-xl-none" src="img/img/mobile-logo.png " alt="">
             <img class="logo-screen d-none d-xl-block me-2" src="img/img/logo.svg " alt=""></div>
         </div>
+
+        <!-- BARRA DI RICERCA -->
         <div class="col p-0">
           <form class="d-flex align-items-center rounded">
             <label for="ricerca" class="mb-0 mx-2 form-label"><i class="fa-solid fa-magnifying-glass"></i></label>
             <input type="text" class="form-control" name="ricerca" id="ricerca" placeholder="Prova a cercare: Lezioni di Laravel">
           </form>
         </div>
+
+        <!-- ICONE -->
         <div class="col-auto p-1">
           <div class="d-flex justify-content-end">
             <i class="fa-solid fa-list d-none d-xl-block mx-3"></i>
             <i class="fa-solid fa-circle-question d-none d-xl-block mx-3"></i>
             <i class="fa-solid fa-ellipsis-vertical d-none d-xl-block mx-3"></i>
+
+            <!-- DROPDOWN -->
             <div class="dropdown">
               <i class="fa-solid fa-bell text-warning ms-3" data-bs-toggle="dropdown" aria-expanded="false"></i>
               <ul class="dropdown-menu">
@@ -45,13 +54,14 @@
               </ul>
             </div>
           </div>
-          
         </div>
       </div>
     </div>
   </header>
 
+  <!-- MAIN -->
   <main class="d-flex">
+    <!-- SIDEBAR -->
     <section class="sidebar text-light">
       <div class="container h-100 d-flex flex-column justify-content-between py-4">
         <div class="icons w-100 d-flex flex-column text-center">
@@ -76,29 +86,44 @@
       </div>
     </section>
 
+    <!-- CORPO CENTALE -->
     <section class="central">
+
+      <!-- SEZIONE BLU -->
       <section class="main-menu text-light">
         <div class="container-fluid py-3 h-100 ">
           <div class="row flex-column flex-md-row ">
+
+            <!-- NUOVO STUDENTE E CANVAS -->
             <div class="col col-md-4 col-xl-3 d-flex align-items-baseline order-md-1 justify-content-md-end">
               <span>Nuovo Studente</span>
               <i class="fa-solid fa-plus" data-bs-toggle="offcanvas"
               data-bs-target="#offcanvas" aria-controls="offcanvas"></i>
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+
+                <!-- OFFCANVAS HEADER -->
                 <div class="offcanvas-header">
                   <h5 class="offcanvas-title" id="offcanvasLabel">Inserisci nuovo utente</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
+
+                <!-- OFFCANVAS BODY -->
                 <div class="offcanvas-body">
                   <form class="row g-3">
+
+                    <!-- NOME -->
                     <div class="col-md-6">
                       <label for="name" class="form-label">Nome</label>
                       <input type="text" class="form-control" id="name">
                     </div>
+
+                    <!-- COGNOME -->
                     <div class="col-md-6">
                       <label for="last-name" class="form-label">Cognome</label>
                       <input type="text" class="form-control" id="last-name">
                     </div>
+
+                    <!-- EMAIL -->
                     <div class="col-md-6 ">
                       <label for="email" class="form-label">Email</label>
                       <div class="input-group">
@@ -106,18 +131,26 @@
                         <input type="email" class="form-control" aria-label="email" aria-describedby="chiocciola">
                       </div>
                     </div>
+
+                    <!-- PASSWORD -->
                     <div class="col-md-6">
                       <label for="password" class="form-label">Password</label>
                       <input type="text" class="form-control" id="password">
                     </div>
+
+                    <!-- INDIRIZZO -->
                     <div class="col-12">
                       <label for="address" class="form-label">Indirizzo</label>
                       <input type="text" class="form-control" id="address">
                     </div>
+
+                    <!-- CITTà -->
                     <div class="col-md-6">
                       <label for="city" class="form-label">Città</label>
                       <input type="text" class="form-control" id="city">
                     </div>
+                    
+                    <!-- STATO -->
                     <div class="col-md-4">
                       <label for="state" class="form-label">Stato</label>
                       <select id="state" class="form-select">
@@ -128,16 +161,20 @@
                         <option>Italia</option>
                       </select>
                     </div>
+
+                    <!-- CAP -->
                     <div class="col-md-2">
                       <label for="cap" class="form-label">CAP</label>
                       <input type="text" class="form-control" id="cap">
                     </div> 
 
+                    <!-- FOTO -->
                     <div class="col mb-3">
                       <label for="file" class="form-label">Foto</label>
                       <input type="file" class="form-control" id="file">
                     </div>
 
+                    <!-- CHECKBOX -->
                     <div class="form-check ms-2">
                       <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
                       <label class="form-check-label" for="flexCheckDefault">
@@ -145,6 +182,7 @@
                       </label>
                     </div>
 
+                    <!-- BUTTONS -->
                     <div class="col-12">
                       <button class="btn btn-primary" type="submit">Salva</button>
                       <input class="btn btn-warning" type="reset" value="Svuota">
@@ -152,9 +190,9 @@
                   </form>
                 </div>
               </div>
-
-
             </div>
+
+            <!-- CORSO BOOLEAN -->
             <div class="col col-md-4 col-xl-6 my-4 my-md-0">
               <div>
                 <span class="course-name">Boolean</span>
@@ -169,6 +207,8 @@
                 <span class="blue-border d-none d-xl-inline">Boolean blog app</span>
               </div>
             </div>
+
+            <!-- STUDENTI ONLINE -->
             <div class="col col-md-4 col-xl-3 lh-1">
               <p>Studenti online negli ultimi 30 minuti</p>
               <span class="student-number">125</span>
@@ -177,9 +217,12 @@
         </div>
       </section>
 
+      <!-- SEZIONE CARD -->
       <section class="card-box h-100 mx-2 my-3">
         <div class="row flex-column flex-xl-row ">
           <div class="col col-xl-8">
+
+            <!-- PROSSIME CLASSI -->
             <div class="card mb-3">
               <h5 class="card-header">Prossime classi</h5>
               <div class="card-body">
@@ -318,6 +361,8 @@
                 </table>
               </div>
             </div>
+
+            <!-- FAQ -->
             <div class="card mb-3">
               <h5 class="card-header">F.A.Q.</h5>
               <div class="card-body">
@@ -343,7 +388,6 @@
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-faq">
                       <div class="accordion-body">
                         <p>Clicca sull'icona della campanella.</p>
-                        
                       </div>
                     </div>
                   </div>
@@ -363,6 +407,8 @@
               </div>
             </div>
           </div>
+
+          <!-- TO DO -->
           <div class="col col-xl-4">
             <div class="card mb-3">
               <h5 class="card-header">To Do</h5>
@@ -387,6 +433,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- UTENTI ATTIVI -->
             <div class="card">
               <img src="img/img/stats.jpeg" class="card-img-top" alt="">
               <div class="card-body">
@@ -404,7 +452,6 @@
             </div>
             </div>
           </div>
-        </div>
       </section>
     </section>
   </main>
