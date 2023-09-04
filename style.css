@@ -3,13 +3,6 @@ body{
   overflow: hidden;
 }
 
-[class^="container"], .card-box{
-  border: 1px solid black;
-}
-
-[class^="col"]{
-  border: 1px solid red;
-}
 
 header, .central{
   background-color: #F8F9FA;
@@ -19,8 +12,7 @@ header{
   height: 80px;
 }
 
-
-header .container{
+header [class^="container"]{
   background-color: white;
 }
 
@@ -30,6 +22,11 @@ header .container{
 
 header div:last-child{
   color: #5B5858;
+}
+
+header .logo-phone{
+  width: 30px;
+  height: 30px;
 }
 
 
