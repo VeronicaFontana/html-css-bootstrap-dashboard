@@ -82,7 +82,82 @@
           <div class="row flex-column flex-md-row ">
             <div class="col col-md-4 col-xl-3 d-flex align-items-baseline order-md-1 justify-content-md-end">
               <span>Nuovo Studente</span>
-              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-plus" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvas" aria-controls="offcanvas"></i>
+              <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasLabel">Inserisci nuovo utente</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <form class="row g-3">
+                    <div class="col-md-6">
+                      <label for="name" class="form-label">Nome</label>
+                      <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="last-name" class="form-label">Cognome</label>
+                      <input type="text" class="form-control" id="last-name">
+                    </div>
+                    <div class="col-md-6 ">
+                      <label for="email" class="form-label">Email</label>
+                      <div class="input-group">
+                        <span class="input-group-text" id="chiocciola">@</span>
+                        <input type="email" class="form-control" aria-label="email" aria-describedby="chiocciola">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="password" class="form-label">Password</label>
+                      <input type="text" class="form-control" id="password">
+                    </div>
+                    <div class="col-12">
+                      <label for="address" class="form-label">Indirizzo</label>
+                      <input type="text" class="form-control" id="address">
+                    </div>
+                    <div class="col-md-6">
+                      <label for="city" class="form-label">Città</label>
+                      <input type="text" class="form-control" id="city">
+                    </div>
+                    <div class="col-md-4">
+                      <label for="state" class="form-label">Stato</label>
+                      <select id="state" class="form-select">
+                        <option selected>Scegli...</option>
+                        <option>Albania</option>
+                        <option>Francia</option>
+                        <option>Germania</option>
+                        <option>Italia</option>
+                      </select>
+                    </div>
+                    <div class="col-md-2">
+                      <label for="cap" class="form-label">CAP</label>
+                      <input type="text" class="form-control" id="cap">
+                    </div> 
+
+                    <div class="col mb-3">
+                      <label for="file" class="form-label">Foto</label>
+                      <input type="file" class="form-control" id="file">
+                    </div>
+
+                    <div class="form-check ms-2">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Seleziona per proseguire
+                      </label>
+                    </div>
+
+                    <div class="col-12">
+                      <button class="btn btn-primary" type="submit">Salva</button>
+                      <input class="btn btn-warning" type="reset" value="Svuota">
+                    </div>
+
+                  </form>
+
+
+                </div>
+              </div>
+
+
+              
             </div>
             <div class="col col-md-4 col-xl-6 my-4 my-md-0">
               <div>
@@ -229,13 +304,13 @@
                 <div class="accordion" id="accordion-faq">
                   <div class="accordion-item">
                     <h2 class="accordion-header">
-                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                         Come aggiungere un nuovo studente?
                       </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordion-faq">
                       <div class="accordion-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, dolorem. Eos, ad ullam repudiandae minus obcaecati quae aliquam magnam odit illum natus delectus officia reprehenderit corrupti atque minima voluptatum labore quibusdam facere mollitia earum non. Perferendis minus quo cupiditate, ab, architecto itaque culpa non, animi ad enim voluptate ipsum reprehenderit!</p>
+                        <p>Clicca sul "+" in alto nella sezione blu.</p>
                       </div>
                     </div>
                   </div>
@@ -247,7 +322,7 @@
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordion-faq">
                       <div class="accordion-body">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, dolorem. Eos, ad ullam repudiandae minus obcaecati quae aliquam magnam odit illum natus delectus officia reprehenderit corrupti atque minima voluptatum labore quibusdam facere mollitia earum non. Perferendis minus quo cupiditate, ab, architecto itaque culpa non, animi ad enim voluptate ipsum reprehenderit!</p>
+                        <p>Clicca sull'icona della campanella.</p>
                         
                       </div>
                     </div>

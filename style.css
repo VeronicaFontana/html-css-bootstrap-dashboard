@@ -32,6 +32,10 @@ header .logo-phone{
   height: 30px;
 }
 
+.offcanvas form, .offcanvas form input{
+  background-color: white;
+}
+
 .sidebar{
   background-image: url(img/img/sidebar-bg.png);
   background-color: #051E34;
@@ -53,11 +57,16 @@ body main .central{
   background-color: #1B72E8;
 }
 
-.central .row div:first-child .fa-plus{
+.fa-plus{
   border: 1px solid white;
   padding: 10px;
   margin-left: 15px;
   border-radius: 5px;
+}
+
+.fa-plus:hover{
+  background-color: white;
+  color: #1B72E8;
 }
 
 .course-name, .student-number{
